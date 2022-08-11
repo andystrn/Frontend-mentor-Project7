@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(204, 43%, 93%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karla', 
+        sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.conteiner {
+    max-width: 760px;
+    display: flex;
+    justify-items: center;
+    align-items: center;    
+}
+
+.wrapper {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 1px 0.5px 15px #92b6b6;
+    margin: 2rem 1rem;
+}
+
+.box {
+    padding: 40px 30px;
+}
+
+.top {
+    background-color: white;
+}
+
+.top h2{
+    color:hsl(179, 62%, 43%);
+    margin-bottom: 15px;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.top h3{
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.top p{
+    color: hsl(218, 22%, 67%);
+}
+
+.bottom {
+    display: flex;
+    color: white;
+    
+}
+
+.left {
+    background-color: hsl(179, 62%, 43%);
+    flex-basis: 52vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.left h3,
+.right h3{
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price .number{
+    font-size: 30px;
+}
+
+.price .period {
+    color: hsl(204, 43%, 93%);
+}
+
+
+.right {
+    flex-basis: 48vw;
+    background-color: hsla(179, 62%, 43%, .7);
+}
+
+.right ul{
+    list-style: none;
+}
+
+.left a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 425px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 1rem;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box {
+        padding: 30px 20px;
+    }
+}
